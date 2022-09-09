@@ -12,14 +12,10 @@ int main(void)
 	char upr;
 	char lwr;
 
+	for (lwr = 'a'; lwr <= 'z'; lwr++)
+		putchar(lwr);
 	for (upr = 'A'; upr <= 'Z'; upr++)
-	{
-		for (lwr = 'a'; lwr <= 'z'; lwr++)
-		{
-			putchar(lwr);
-			putchar(upr);
-		}
-		putchar('\n');
-	}
+		putchar(upr);
+	putchar('\n');
 	return (0);
 }
