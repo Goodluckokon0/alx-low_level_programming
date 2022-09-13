@@ -16,8 +16,7 @@ int _isalpha(int c)
 		{
 			if (c == upr || c == lwr)
 				return (1);
-			else
-				return (0);
 		}
 	}
+	return (0);
 }
