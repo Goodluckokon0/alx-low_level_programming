@@ -15,6 +15,7 @@ int main(void)
 		b = ((a % 3) == 0 || (a % 5) == 0);
 		sum += b;
 	}
-	printf("%d\n", sum);
+	printf("%d", sum);
+	printf("\n");
 	return (0);
 }
