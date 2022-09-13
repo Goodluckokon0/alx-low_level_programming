@@ -12,8 +12,8 @@ int main(void)
 
 	for (a = 1; a < 1024; a++)
 	{
-		b = ((a % 3) == 0 || (a % 5) == 0);
-		sum += b;
+		if ((a % 3) == 0 || (a % 5) == 0);
+			sum += a;
 	}
 	printf("%d", sum);
 	printf("\n");
