@@ -23,6 +23,6 @@ int main(void)
 		else
 			printf("%d ", a);
 	}
-	_putchat('\n');
+	printf("\n");
 	return (0);
 }
