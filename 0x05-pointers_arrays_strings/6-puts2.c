@@ -13,7 +13,9 @@ void puts2(char *str)
 	while (count >= 0)
 	{
 		if (str[count] == '\0')
+		{
 			break;
+		}
 		_putchar(str[count]);
 		count += 2;
 	}
