@@ -16,8 +16,10 @@ char *rot13(char *str)
 		for (i = 0; i < 52; i++)
 		{
 			if (*(str + count) == alpha[i])
+			{
 				*(str + count) == rot13[i];
 					break;
+			}
 		}
 		count++;
 	}
