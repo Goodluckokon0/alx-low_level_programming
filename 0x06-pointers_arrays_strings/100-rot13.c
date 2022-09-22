@@ -5,7 +5,7 @@
  * @str: input string
  * Return: A pointer to the string
  */
-char *rot13(char *s)
+char *rot13(char *str)
 {
 	int count = 0;
 	int i;
@@ -20,13 +20,13 @@ char *rot13(char *s)
 		'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
 		'I', 'J', 'K', 'L', 'M'};
 
-	while (*(str + count) != '\0')
+	while (str[count])
 	{
 		for (i = 0; i < 52; i++)
 		{
-			if (*(str + count) == alpha[i])
+			if (str[count] == alpha[i])
 			{
-				*(str + count) == rot13[i];
+				str[count] == rot13[i];
 				break;
 			}
 		}
