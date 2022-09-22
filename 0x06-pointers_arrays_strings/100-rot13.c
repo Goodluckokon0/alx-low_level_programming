@@ -5,9 +5,10 @@
  * @str: input string
  * Return: A pointer to the string
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	int count = 0, i;
+	int count = 0;
+	int i;
 	char alpha[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
 		'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
 		'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
