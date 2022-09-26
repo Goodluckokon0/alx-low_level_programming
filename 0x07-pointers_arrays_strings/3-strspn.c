@@ -10,7 +10,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
-	unsigned int bytes = 0;
+	unsigned int bool;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
