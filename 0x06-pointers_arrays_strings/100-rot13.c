@@ -19,7 +19,7 @@ char *rot13(char *str)
 		'k', 'l', 'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
 		'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
 		'I', 'J', 'K', 'L', 'M'};
-		
+
 	while (str[i])
 	{
 		for (j = 0; j < 52; j++)
