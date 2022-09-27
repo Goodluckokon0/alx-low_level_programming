@@ -7,7 +7,7 @@
  */
 char *rot13(char *str)
 {
-	int i, j, k;
+	int i = 0, j, k;
 	char alpha[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
 		'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
 		'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
@@ -19,7 +19,7 @@ char *rot13(char *str)
 		'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
 		'I', 'J', 'K', 'L', 'M'};
 		
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i])
 	{
 		for (j = 0; j < 52; j++)
 		{
@@ -29,6 +29,7 @@ char *rot13(char *str)
 				break;
 			}
 		}
+		i++;
 	}
 	return (str);
 }
