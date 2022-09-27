@@ -21,9 +21,9 @@ char *rot13(char *str)
 		
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; alpha[j] != '\0'; j++)
+		for (j = 0; j < 52; j++)
 		{
-			for (k = 0; rot13[k] != '\0'; k++)
+			for (k = 0; k < 52; k++)
 			{
 				if (str[i] == alpha[j])
 					str[i] = rot13[k];
