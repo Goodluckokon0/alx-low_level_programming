@@ -1,1 +1,1 @@
-prject on more singly linked list in C programming
+project on slingly linked list in C
